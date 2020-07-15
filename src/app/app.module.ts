@@ -6,6 +6,7 @@ import { CursosComponent } from './cursos/cursos.component';
 
 import { CursosService } from './cursos/cursos.service';
 import { CriarCursoModule } from './criar-curso/criar-curso.module';
+import { LogService } from './shared/log.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,10 @@ import { CriarCursoModule } from './criar-curso/criar-curso.module';
     BrowserModule,
     CriarCursoModule
   ],
-  providers: [CursosService],
+  providers: [
+    CursosService,
+    LogService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
