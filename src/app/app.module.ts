@@ -5,16 +5,16 @@ import { AppComponent } from './app.component';
 import { CursosComponent } from './cursos/cursos.component';
 
 import { CursosService } from './cursos/cursos.service';
-import { CriarCursoComponent } from './criar-curso/criar-curso.component';
+import { CriarCursoModule } from './criar-curso/criar-curso.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     CursosComponent,
-    CriarCursoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CriarCursoModule
   ],
   providers: [CursosService],
   bootstrap: [AppComponent]
